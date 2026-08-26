@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Game & Web Showcase</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --accent-color: #38bdf8;
+            --accent-hover: #0ea5e9;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .card h3 {
+            margin-top: 0;
+            font-size: 1.4rem;
+            color: var(--text-primary);
+        }
+
+        .card p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.5;
+            flex-grow: 1;
+        }
+
+        .card a {
+            display: inline-block;
+            margin-top: 16px;
+            padding: 10px 16px;
+            background-color: var(--accent-color);
+            color: var(--bg-color);
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 6px;
+            transition: background-color 0.2s ease;
+        }
+
+        .card a:hover {
+            background-color: var(--accent-hover);
+        }
+
+        footer {
+            margin-top: 60px;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🎮 Project Showcase</h1>
+        <p>기획하고 제작한 게임과 웹 프로젝트 아카이브</p>
+    </header>
+
+    <div class="container">
+        <!-- 1. ERPD -->
+        <div class="card">
+            <h3>ERPD (이터널 리턴 픽셀 던전)</h3>
+            <p>소울나이트의 탑다운 액션 전투 시스템과 이터널 리턴의 하위/상위 장비 크래프팅 시스템을 융합한 PVE 로그라이트 프로젝트.</p>
+            <a href="여기에_ERPD_링크_입력" target="_blank">프로젝트 방문하기</a>
+        </div>
+
+        <!-- 2. Arkerogue -->
+        <div class="card">
+            <h3>Arkerogue</h3>
+            <p>웹에서 바로 플레이할 수 있도록 배포된 핵심 로그라이크/로그라이트 시스템 검증용 프로토타입 웹 게임.</p>
+            <a href="여기에_Arkerogue_링크_입력" target="_blank">프로젝트 방문하기</a>
+        </div>
+
+        <!-- 3. 블서이리소울나이트 -->
+        <div class="card">
+            <h3>블서이리소울나이트</h3>
+            <p>블랙서바이벌 및 이터널 리턴의 캐릭터와 아이템 빌드업 감성을 소울나이트 스타일의 슈터 메커니즘으로 녹여낸 기획 및 구현체.</p>
+            <a href="여기에_해당_링크_입력" target="_blank">프로젝트 방문하기</a>
+        </div>
+
+        <!-- 4. 명토체스(tft) -->
+        <div class="card">
+            <h3>명토체스 (TFT)</h3>
+            <p>오토체스 장르의 문법에 명일방주의 진영별, 직업별 오퍼레이터 스킨과 스킬 시너지를 이식한 PVE 오토배틀러 프로젝트.</p>
+            <a href="여기에_해당_링크_입력" target="_blank">프로젝트 방문하기</a>
+        </div>
+
+        <!-- 5. 명방냥코 -->
+        <div class="card">
+            <h3>명방냥코</h3>
+            <p>팔라독/냥코 대전전쟁 스타일의 횡스크롤 라인 오펜스 시스템에 명일방주 캐릭터들의 소환 코스트와 디펜스 룰을 결합한 모듈.</p>
+            <a href="여기에_해당_링크_입력" target="_blank">프로젝트 방문하기</a>
+        </div>
+
+        <!-- 6. observER-optimizER -->
+        <div class="card">
+            <h3>observER-optimizER</h3>
+            <p>게임 내 플레이 로그나 기록, 혹은 유틸리티적 데이터 흐름을 관측하고 최적화하기 위해 설계된 보조 웹/툴 프로젝트.</p>
+            <a href="여기에_해당_링크_입력" target="_blank">프로젝트 방문하기</a>
+        </div>
+
+        <!-- 7. 이터널리턴 3:3 퍼즐 -->
+        <div class="card">
+            <h3>이터널 리턴 3:3 퍼즐</h3>
+            <p>이터널 리턴의 캐릭터 조합과 메커니즘 요소를 직관적인 퍼즐 게임 규칙과 융합하여 가볍게 즐길 수 있도록 구성한 미니 프로젝트.</p>
+            <a href="여기에_해당_링크_입력" target="_blank">프로젝트 방문하기</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Project Showcase. All rights reserved.</p>
+    </body>
+</html>
